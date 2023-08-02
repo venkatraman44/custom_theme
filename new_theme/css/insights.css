@@ -1,0 +1,126 @@
+.insights {
+  background-color: #0020f6;
+}
+.insights__heading {
+  color: #fff;
+  font-size: 40px;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .insights__heading {
+    font-size: 65px;
+    padding-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  .insights__heading {
+    font-size: 65px;
+    padding-bottom: 1.5rem;
+  }
+}
+.insights__heading::before {
+  content: "";
+  height: 0.75rem;
+  width: 35px;
+  display: inline-block;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  margin-right: 1rem;
+  background-color: #e3F307;
+}
+@media screen and (min-width: 1024px) {
+  .insights__heading::before {
+    width: 327px;
+  }
+}
+.insights__para {
+  color: #fff;
+  margin-bottom: 2.5rem;
+  padding: 10px;
+  font-size: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .insights__para {
+    font-size: 18px;
+    margin-left: 335px;
+    width: 534px;
+    padding-bottom: 3.5rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  .insights__para {
+    font-size: 16px;
+    padding-bottom: 3.5rem;
+  }
+}
+.insights__wrapper {
+  margin: 10px 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .insights__wrapper {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 767px) {
+  .insights__wrapper {
+    margin: 20px 20px 0 20px;
+    gap: 20px;
+  }
+}
+.insights__cards {
+  padding: 20px;
+  background-color: white;
+  position: relative;
+}
+.insights__cards img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 1024px) {
+  .insights__cards {
+    width: 24.4rem;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+.insights__cards:hover {
+  cursor: pointer;
+}
+.insights__cards:hover img {
+  transform: scale(1.2);
+  transition: all 0.25s ease-in-out;
+}
+.insights__title {
+  color: #0020f6;
+  font-size: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .insights__title {
+    width: 200px;
+  }
+}
+.insights__title::after {
+  position: absolute;
+  content: "";
+  height: 0.25rem;
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  right: 0%;
+  background-color: #e3F307;
+}
+@media screen and (min-width: 1024px) {
+  .insights__content {
+    padding: 10px 20px 20px 20px;
+  }
+}
+
+.insights__container {
+  display: contents;
+}

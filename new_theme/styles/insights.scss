@@ -1,0 +1,131 @@
+@use './abstracts/colors' as *;
+
+.insights {
+  background-color: $secondary_blue;
+
+  &__heading {
+    color: $white;
+    font-size: 40px;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+
+    @media screen and (min-width:1024px) {
+      font-size: 65px;
+      padding-bottom: 1.5rem;
+    }
+
+    @media screen and (min-width:767px) {
+      font-size: 65px;
+      padding-bottom: 1.5rem;
+    }
+
+    &::before {
+      content: "";
+      height: 0.75rem;
+      width: 35px;
+      display: inline-block;
+      margin-bottom: 15px;
+      vertical-align: middle;
+      margin-right: 1rem;
+      background-color: $yellow;
+
+      @media screen and (min-width:1024px) {
+        width: 327px;
+      }
+    }
+  }
+
+  &__para {
+    color: $white;
+    margin-bottom: 2.5rem;
+    padding: 10px;
+    font-size: 16px;
+
+
+    @media screen and (min-width:1024px) {
+      font-size: 18px;
+      margin-left: 335px;
+      width: 534px;
+      padding-bottom: 3.5rem;
+    }
+
+    @media screen and (min-width:767px) {
+      font-size: 16px;
+      padding-bottom: 3.5rem;
+    }
+  }
+
+  &__wrapper {
+    margin: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (min-width:1024px) {
+      flex-direction: row;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    @media screen and (min-width:767px) {
+      margin: 20px 20px 0 20px;
+      gap: 20px;
+    }
+  }
+
+  &__cards {
+    padding: 20px;
+    background-color: white;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (min-width:1024px) {
+      width: 24.4rem;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      img {
+        transform: scale(1.2);
+        transition: all .25s ease-in-out;
+      }
+    }
+  }
+
+  &__title {
+    color: $secondary_blue;
+    font-size: 16px;
+
+    @media screen and (min-width:1024px) {
+      width: 200px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 0.25rem;
+      width: 80px;
+      display: inline-block;
+      vertical-align: middle;
+      right: 0%;
+      background-color: $yellow;
+    }
+  }
+
+  &__content {
+    @media screen and (min-width:1024px) {
+      padding: 10px 20px 20px 20px;
+    }
+  }
+}
+
+.insights__container {
+  display: contents;
+}

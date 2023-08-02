@@ -1,0 +1,41 @@
+.ideas {
+    background-color: #0020f6;
+    text-align: center;
+    padding-top: 6rem;
+    box-sizing: border-box;
+    padding-bottom: 6rem;
+
+    &__heading {
+        font-size: 2.25rem;
+        color: white;
+        @media screen and (max-width:768px) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width:768px) {
+            font-size: 36px;
+        }
+        @media screen and (max-width:375px) {
+            width: 357px;
+        }
+    }
+    &__contact {
+        margin-top: 3.5rem;
+        a {
+            background-color: #e3f307;
+            color: #0020f6;
+            text-decoration: none;
+            padding: 15px;
+            border:0.0625rem solid #e3f307;
+            display: inline-block;
+            font-size: .75rem;
+            letter-spacing: 0.125rem;
+            padding: 0.5rem 2.5rem;
+            border-radius: 0.3125rem;
+
+            &:hover {
+                background-color: #0020f6;
+                color: #e3f307;
+            }
+        }
+    }
+}

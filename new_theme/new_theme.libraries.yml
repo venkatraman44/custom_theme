@@ -1,0 +1,55 @@
+crafting-section :
+  css:
+    theme:
+      css/crafting.css: {}
+
+ideas-section :
+  css:
+    theme:
+      css/ideas.css: {}
+
+header-section :
+  css:
+    theme:
+      css/header.css: {}
+
+standing-section :
+  css:
+    theme:
+      css/standing.css: {}
+
+insights-section :
+  css:
+    theme:
+      css/insights.css: {}
+
+slider :
+  css:
+    theme:
+      css/slider.css: {}
+  js:
+    js/slider.js: {}
+
+  dependencies:
+    - core/jquery
+    - new_theme/slick
+
+
+slick:
+  version: 1.x
+  css:
+    theme:
+      assets/slick/slick.css: {}
+      assets/slick/slick-theme.css: {}
+  js:
+    assets/slick/slick.min.js: {}
+
+banner:
+  css:
+    theme:
+        css/banner.css: {}
+
+colored:
+  css:
+    theme:
+        css/colored.css: {}
